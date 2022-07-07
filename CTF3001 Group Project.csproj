@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F7543E8-AFF3-425A-8152-AC4A089BEF30}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CTF3001_Group_Project</RootNamespace>
+    <AssemblyName>CTF3001 Group Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audi Car Forms\Form_A3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audi Car Forms\Form_A3.Designer.cs">
+      <DependentUpon>Form_A3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audi Car Forms\Form_Q5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audi Car Forms\Form_Q5.Designer.cs">
+      <DependentUpon>Form_Q5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audi Car Forms\Form_R8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audi Car Forms\Form_R8.Designer.cs">
+      <DependentUpon>Form_R8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Audi Car Forms\Form_S4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audi Car Forms\Form_S4.Designer.cs">
+      <DependentUpon>Form_S4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMW Car Forms\Form_1Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMW Car Forms\Form_1Series.Designer.cs">
+      <DependentUpon>Form_1Series.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMW Car Forms\Form_2Series.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMW Car Forms\Form_2Series.Designer.cs">
+      <DependentUpon>Form_2Series.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMW Car Forms\Form_M5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMW Car Forms\Form_M5.Designer.cs">
+      <DependentUpon>Form_M5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMW Car Forms\Form_X3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMW Car Forms\Form_X3.Designer.cs">
+      <DependentUpon>Form_X3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choice Menu and Car Manufacturer Menus Forms\Form_AudiCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choice Menu and Car Manufacturer Menus Forms\Form_AudiCars.Designer.cs">
+      <DependentUpon>Form_AudiCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Volkswagen Car Forms\Form_Golf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volkswagen Car Forms\Form_Golf.Designer.cs">
+      <DependentUpon>Form_Golf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Volkswagen Car Forms\Form_Passat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volkswagen Car Forms\Form_Passat.Designer.cs">
+      <DependentUpon>Form_Passat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Volkswagen Car Forms\Form_Scirocco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volkswagen Car Forms\Form_Scirocco.Designer.cs">
+      <DependentUpon>Form_Scirocco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toyota Car Forms\Form_Aygo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toyota Car Forms\Form_Aygo.Designer.cs">
+      <DependentUpon>Form_Aygo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choice Menu and Car Manufacturer Menus Forms\Form_BMWCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choice Menu and Car Manufacturer Menus Forms\Form_BMWCars.Designer.cs">
+      <DependentUpon>Form_BMWCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choice Menu and Car Manufacturer Menus Forms\Form_ChoiceMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choice Menu and Car Manufacturer Menus Forms\Form_ChoiceMenu.Designer.cs">
+      <DependentUpon>Form_ChoiceMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ford Car Forms\Form_Focus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ford Car Forms\Form_Focus.Designer.cs">
+      <DependentUpon>Form_Focus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ford Car Forms\Form_CMax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ford Car Forms\Form_CMax.Designer.cs">
+      <DependentUpon>Form_CMax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ford Car Forms\Form_Fiesta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ford Car Forms\Form_Fiesta.Designer.cs">
+      <DependentUpon>Form_Fiesta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ford Car Forms\Form_Mustang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ford Car Forms\Form_Mustang.Designer.cs">
+      <DependentUpon>Form_Mustang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Price Range Menu Forms\Form_PriceRange2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Price Range Menu Forms\Form_PriceRange2.Designer.cs">
+      <DependentUpon>Form_PriceRange2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Price Range Menu Forms\Form_PriceRange3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Price Range Menu Forms\Form_PriceRange3.Designer.cs">
+      <DependentUpon>Form_PriceRange3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Price Range Menu Forms\Form_PriceRange4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Price Range Menu Forms\Form_PriceRange4.Designer.cs">
+      <DependentUpon>Form_PriceRange4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skoda Car Forms\Form_Citigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skoda Car Forms\Form_Citigo.Designer.cs">
+      <DependentUpon>Form_Citigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skoda Car Forms\Form_Fabia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skoda Car Forms\Form_Fabia.Designer.cs">
+      <DependentUpon>Form_Fabia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choice Menu and Car Manufacturer Menus Forms\Form_FordCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choice Menu and Car Manufacturer Menus Forms\Form_FordCars.Designer.cs">
+      <DependentUpon>Form_FordCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intro, Login and Register Forms\Form_Introduction%28Welcome%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro, Login and Register Forms\Form_Introduction%28Welcome%29.Designer.cs">
+      <DependentUpon>Form_Introduction%28Welcome%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intro, Login and Register Forms\Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro, Login and Register Forms\Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skoda Car Forms\Form_Octavia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skoda Car Forms\Form_Octavia.Designer.cs">
+      <DependentUpon>Form_Octavia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Price Range Menu Forms\Form_PriceRange1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Price Range Menu Forms\Form_PriceRange1.Designer.cs">
+      <DependentUpon>Form_PriceRange1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choice Menu and Car Manufacturer Menus Forms\Form_SkodaCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choice Menu and Car Manufacturer Menus Forms\Form_SkodaCars.Designer.cs">
+      <DependentUpon>Form_SkodaCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skoda Car Forms\Form_Superb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skoda Car Forms\Form_Superb.Designer.cs">
+      <DependentUpon>Form_Superb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choice Menu and Car Manufacturer Menus Forms\Form_ToyotaCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choice Menu and Car Manufacturer Menus Forms\Form_ToyotaCars.Designer.cs">
+      <DependentUpon>Form_ToyotaCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choice Menu and Car Manufacturer Menus Forms\Form_VolkswagenCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choice Menu and Car Manufacturer Menus Forms\Form_VolkswagenCars.Designer.cs">
+      <DependentUpon>Form_VolkswagenCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Intro, Login and Register Forms\Form_Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intro, Login and Register Forms\Form_Register.Designer.cs">
+      <DependentUpon>Form_Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toyota Car Forms\Form_Corolla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toyota Car Forms\Form_Corolla.Designer.cs">
+      <DependentUpon>Form_Corolla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toyota Car Forms\Form_Prius.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toyota Car Forms\Form_Prius.Designer.cs">
+      <DependentUpon>Form_Prius.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toyota Car Forms\Form_Yaris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toyota Car Forms\Form_Yaris.Designer.cs">
+      <DependentUpon>Form_Yaris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Volkswagen Car Forms\Form_Polo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volkswagen Car Forms\Form_Polo.Designer.cs">
+      <DependentUpon>Form_Polo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Audi Car Forms\Form_A3.resx">
+      <DependentUpon>Form_A3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audi Car Forms\Form_Q5.resx">
+      <DependentUpon>Form_Q5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audi Car Forms\Form_R8.resx">
+      <DependentUpon>Form_R8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Audi Car Forms\Form_S4.resx">
+      <DependentUpon>Form_S4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMW Car Forms\Form_1Series.resx">
+      <DependentUpon>Form_1Series.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMW Car Forms\Form_2Series.resx">
+      <DependentUpon>Form_2Series.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMW Car Forms\Form_M5.resx">
+      <DependentUpon>Form_M5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMW Car Forms\Form_X3.resx">
+      <DependentUpon>Form_X3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choice Menu and Car Manufacturer Menus Forms\Form_AudiCars.resx">
+      <DependentUpon>Form_AudiCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Volkswagen Car Forms\Form_Golf.resx">
+      <DependentUpon>Form_Golf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Volkswagen Car Forms\Form_Passat.resx">
+      <DependentUpon>Form_Passat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Volkswagen Car Forms\Form_Scirocco.resx">
+      <DependentUpon>Form_Scirocco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toyota Car Forms\Form_Aygo.resx">
+      <DependentUpon>Form_Aygo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choice Menu and Car Manufacturer Menus Forms\Form_BMWCars.resx">
+      <DependentUpon>Form_BMWCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choice Menu and Car Manufacturer Menus Forms\Form_ChoiceMenu.resx">
+      <DependentUpon>Form_ChoiceMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ford Car Forms\Form_CMax.resx">
+      <DependentUpon>Form_CMax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ford Car Forms\Form_Fiesta.resx">
+      <DependentUpon>Form_Fiesta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ford Car Forms\Form_Focus.resx">
+      <DependentUpon>Form_Focus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ford Car Forms\Form_Mustang.resx">
+      <DependentUpon>Form_Mustang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Price Range Menu Forms\Form_PriceRange2.resx">
+      <DependentUpon>Form_PriceRange2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Price Range Menu Forms\Form_PriceRange3.resx">
+      <DependentUpon>Form_PriceRange3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Price Range Menu Forms\Form_PriceRange4.resx">
+      <DependentUpon>Form_PriceRange4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skoda Car Forms\Form_Citigo.resx">
+      <DependentUpon>Form_Citigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skoda Car Forms\Form_Fabia.resx">
+      <DependentUpon>Form_Fabia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choice Menu and Car Manufacturer Menus Forms\Form_FordCars.resx">
+      <DependentUpon>Form_FordCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro, Login and Register Forms\Form_Introduction%28Welcome%29.resx">
+      <DependentUpon>Form_Introduction%28Welcome%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intro, Login and Register Forms\Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skoda Car Forms\Form_Octavia.resx">
+      <DependentUpon>Form_Octavia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Price Range Menu Forms\Form_PriceRange1.resx">
+      <DependentUpon>Form_PriceRange1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choice Menu and Car Manufacturer Menus Forms\Form_SkodaCars.resx">
+      <DependentUpon>Form_SkodaCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skoda Car Forms\Form_Superb.resx">
+      <DependentUpon>Form_Superb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choice Menu and Car Manufacturer Menus Forms\Form_ToyotaCars.resx">
+      <DependentUpon>Form_ToyotaCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choice Menu and Car Manufacturer Menus Forms\Form_VolkswagenCars.resx">
+      <DependentUpon>Form_VolkswagenCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Intro, Login and Register Forms\Form_Register.resx">
+      <DependentUpon>Form_Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toyota Car Forms\Form_Corolla.resx">
+      <DependentUpon>Form_Corolla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toyota Car Forms\Form_Prius.resx">
+      <DependentUpon>Form_Prius.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toyota Car Forms\Form_Yaris.resx">
+      <DependentUpon>Form_Yaris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Volkswagen Car Forms\Form_Polo.resx">
+      <DependentUpon>Form_Polo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Citigo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fabia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Superb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Octavia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CMax.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fiesta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Focus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mustang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prius.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aygo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Corolla.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yaris.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Q5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Polo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scirocco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Golf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Passat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1Series.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2Series.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M5.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
